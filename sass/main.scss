@@ -7,11 +7,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/_button.scss";
-@import "./components/_composition.scss";
-@import "./components/_feature-box.scss";
+@import "components/button";
+@import "./components/card";
+@import "components/composition";
+@import "components/feature-box";
 
-@import "layout/_grid.scss";
-@import "layout/_header.scss";
+@import "layout/grid";
+@import "layout/header";
 
-@import "./pages/_home.scss";
+@import "pages/home";
