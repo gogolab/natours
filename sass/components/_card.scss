@@ -4,7 +4,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
-    
+
     &__side {
         border-radius: 3px;
         overflow: hidden;
@@ -22,31 +22,36 @@
         &--front {
             background-color: $color-white;
         }
-        
+
         &--back {
             transform: rotateY(180deg);
-            
+
             &-1 {
                 background-image: linear-gradient(
-                    to right bottom, $color-secondary-light, $color-secondary-dark
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark
                 );
             }
-            
+
             &-2 {
                 background-image: linear-gradient(
-                    to right bottom, $color-primary-light, $color-primary-dark
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
                 );
             }
-            
+
             &-3 {
                 background-image: linear-gradient(
-                    to right bottom, $color-tertiary-light, $color-tertiary-dark
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark
                 );
             }
         }
-        
     }
-    
+
     &:hover &__side--front {
         transform: rotateY(-180deg);
     }
@@ -65,23 +70,31 @@
         border-radius: 3px;
 
         &--1 {
-            background-image:
-                linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-secondary-light,
+                    $color-secondary-dark
+                ),
                 url(../img/nat-5.jpg);
         }
 
         &--2 {
-            background-image:
-                linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
+                ),
                 url(../img/nat-6.jpg);
         }
 
         &--3 {
-            background-image:
-                linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-tertiary-light,
+                    $color-tertiary-dark
+                ),
                 url(../img/nat-7.jpg);
         }
-
     }
 
     &__heading {
@@ -102,32 +115,31 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image:
-                linear-gradient(
-                    to right bottom,
-                    rgba($color-secondary-light, 0.8),
-                    rgba($color-secondary-dark, 0.8));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-secondary-light, 0.8),
+                rgba($color-secondary-dark, 0.8)
+            );
         }
 
         &--2 {
-            background-image:
-                linear-gradient(
-                    to right bottom,
-                    rgba($color-primary-light, 0.8),
-                    rgba($color-primary-dark, 0.8));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-primary-light, 0.8),
+                rgba($color-primary-dark, 0.8)
+            );
         }
 
         &--3 {
-            background-image:
-                linear-gradient(
-                    to right bottom,
-                    rgba($color-tertiary-light, 0.8),
-                    rgba($color-tertiary-dark, 0.8));
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary-light, 0.8),
+                rgba($color-tertiary-dark, 0.8)
+            );
         }
     }
 
     &__details {
-
         ul {
             list-style: none;
             width: 80%;
