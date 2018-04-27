@@ -95,4 +95,13 @@
             color: $color-primary;
         }
     }
+
+    &__backdrop-close {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
+    }
 }

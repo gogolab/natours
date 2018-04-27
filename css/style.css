@@ -478,6 +478,13 @@ body {
     line-height: 1; }
   .popup__close:hover, .popup__close:active {
     color: #55c57a; }
+  .popup__backdrop-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent; }
 
 .story {
   background-color: rgba(255, 255, 255, 0.6);
