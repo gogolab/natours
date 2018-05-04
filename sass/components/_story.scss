@@ -33,12 +33,25 @@
         height: 15rem;
         background-color: orangered;
         float: left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        // -webkit-shape-outside: circle(50% at 50% 50%);
+        // shape-outside: circle(50% at 50% 50%);
+        // -webkit-clip-path: circle(50% at 50% 50%);
+        // clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewx(12deg);
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (-webkit-clip-path: circle(50% at 50% 50%)) or (clip-path: circle(50% at 50% 50%)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        @supports (-webkit-shape-outside: circle(50% at 50% 50%)) or (shape-outside: circle(50% at 50% 50%)) {
+            -webkit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: 0;
+        }
 
         @include respond(phone) {
             transform: translateX(0) skewX(0);
