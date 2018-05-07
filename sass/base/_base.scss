@@ -33,3 +33,9 @@ body {
         padding: 0;
     }
 }
+
+::-moz-selection,
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
